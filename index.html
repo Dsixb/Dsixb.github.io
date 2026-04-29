@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SOULS_REQUIEM ARCHIVE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="crt">
+
+  <div class="scan"></div>
+  <div class="noise"></div>
+
+  <div class="terminal">
+
+    <!-- HEADER -->
+    <div class="header">
+      <span>SOULS_REQUIEM ARCHIVE SYSTEM</span>
+      <span id="status">ONLINE</span>
+    </div>
+
+    <!-- MENU -->
+    <div class="menu">
+      <button onclick="openPage('philosophy')">PHILOSOPHY</button>
+      <button onclick="openPage('structure')">STRUCTURE</button>
+      <button onclick="openPage('subdivisions')">SUBDIVISIONS</button>
+      <button onclick="openPage('members')">MEMBERS</button>
+      <button onclick="openPage('manual')">MANUAL</button>
+      <button onclick="openPage('logs')">LOGS</button>
+      <button onclick="openPage('classified')">CLASSIFIED</button>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <div id="philosophy" class="page active"></div>
+      <div id="structure" class="page"></div>
+      <div id="subdivisions" class="page"></div>
+      <div id="members" class="page"></div>
+      <div id="manual" class="page"></div>
+      <div id="logs" class="page"></div>
+
+      <!-- 🔒 BLOQUEADO -->
+      <div id="classified" class="page locked">
+        <h2>ACCESS DENIED</h2>
+        <p>CLASSIFIED NODE REQUIRES AUTHORIZATION</p>
+        <button onclick="startHack()">ATTEMPT ACCESS</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
